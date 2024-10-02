@@ -1,0 +1,15 @@
+count =0
+sep = "BABABBBB"
+while( count <len(sep)):
+    if (sep[count] +sep[count+1] == "AB"):
+        sep = sep[:count] + sep[count+2:]
+        if count!=0:
+            count = count -1
+    else if(sep[count] +sep[count+1] == "BB"):
+        sep = sep[:count] + sep[count+2:]
+        if count!=0:
+            count = count -1
+    
+      
+      
+    
